@@ -1,0 +1,94 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Fish shark = new Fish();
+        shark.eat();
+        shark.swim();
+        shark.color = "blue";
+        System.out.println(shark.color);
+
+        Bird peacock = new Bird();
+        peacock.eat();
+        peacock.fly();
+        peacock.color = "peacock-green";
+        peacock.leg = 2;
+        System.out.println(peacock.color);
+        System.out.println(peacock.leg);
+
+        Mammal dog = new Mammal();
+        dog.eat();
+        dog.leg = 4;
+        System.out.println(dog.leg);
+
+        Mammal cat = new Mammal();
+        cat.eat();
+        cat.breathe(); 
+        cat.leg = 4;
+        System.out.println(cat.leg);
+
+        Human human = new Human(); 
+        human.eat();
+        human.leg = 2;
+        System.out.println(human.leg);
+    }
+}
+
+class Animal {
+    String color;
+    int leg;
+
+    void eat() {
+        System.out.println("eats");
+    }
+
+    void breathe() {
+        System.out.println("breathes");
+    }
+}
+
+class Mammal extends Animal {
+    void walk() {
+        System.out.println("walks");
+    }
+}
+
+class Fish extends Animal {
+    void swim() {
+        System.out.println("swims");
+    }
+}
+
+class Bird extends Animal {
+    void fly() {
+        System.out.println("flies");
+    }
+}
+
+class Human extends Mammal {
+    void talk() {
+        System.out.println("talk");
+    }
+}
+
+
+
+
+//output :
+
+eats
+swims
+blue
+eats
+flies
+peacock-green
+2
+eats
+4
+eats
+breathes
+4
+eats
+2
+
+=== Code Execution Successful ===
