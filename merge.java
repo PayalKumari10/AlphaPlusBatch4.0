@@ -60,3 +60,12 @@ public class Main {
         }
     }
 }
+
+=== Code Output ===
+
+earth
+mars
+mercury
+sun
+
+=== Code Execution Successful ===
