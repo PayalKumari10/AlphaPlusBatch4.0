@@ -18,10 +18,10 @@ public class Main {
           list2.add(i*2);
           list3.add(i*3);
       }
-      mainList.add(list1);
+      mainList.add(list1); //add
       mainList.add(list2);
       mainList.add(list3);
-      list2.remove(3);
+      list2.remove(3);  //remove 
       list2.remove(2);
       
       System.out.println(mainList);
@@ -37,3 +37,14 @@ public class Main {
       }
   }
 }
+
+
+
+=== Code Output ===
+
+[[1, 2, 3, 4, 5], [2, 4, 10], [3, 6, 9, 12, 15]]
+12345
+2410
+3691215
+
+=== Code Execution Successful ===
