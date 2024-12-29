@@ -53,3 +53,7 @@ class Main {
         }
     }
 }
+
+=== Code Output ===
+Intersection Point:15
+=== Code Execution Successful ===
