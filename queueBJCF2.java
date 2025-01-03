@@ -14,6 +14,7 @@ public class Main {
     }
 }
 
+
 === Code Output ===
 1
 2
