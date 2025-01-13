@@ -20,36 +20,7 @@ public class Main {
             this.hd = hd;
         }
     }
-    public static void topView(Node root) {
-        // Level order traversal
-        Queue<Info> q = new LinkedList<>();
-        HashMap<Integer, Node> map = new HashMap<>();
-        
-        int min = 0, max = 0;
-        q.add(new Info(root, 0));
-        
-        while (!q.isEmpty()) {
-            Info curr = q.remove();
-            if (!map.containsKey(curr.hd)) {
-                map.put(curr.hd, curr.node);
-            }
-            
-            if (curr.node.left != null) {
-                q.add(new Info(curr.node.left, curr.hd - 1));
-                min = Math.min(min, curr.hd - 1);
-            }
-            if (curr.node.right != null) {
-                q.add(new Info(curr.node.right, curr.hd + 1));
-                max = Math.max(max, curr.hd + 1);
-            }
-        }
-        
-        for (int i = min; i <= max; i++) {
-            System.out.print(map.get(i).data + " ");
-        }
-        System.out.println();
-    }
-    
+   
     public static void KLevel(Node root, int level, int k) {
         if(root == null) {
             return;
