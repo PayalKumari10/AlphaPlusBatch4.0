@@ -36,58 +36,6 @@ public class Main {
         System.out.print(root.data + " ");
         inorder(root.right);
     }
-    public static boolean search(Node root, int key) {
-        if(root == null) {
-            return false;
-        }
-        if(root.data == key) {
-            return true;
-        }
-        if(root.data > key) {
-           return search(root.left, key);
-        } else {
-            return search(root.right, key);
-        }
-    }
-    public static Node findInorderSuccessor(Node root) {
-        while(root.left != null) {
-            root = root.left;
-        }
-        return root;
-    }
-    
-  
-    // public static void printPath(ArrayList<Integer> path) {
-    //     for(int i = 0; i<path.size(); i++) {
-    //         System.out.println(path.get(i)+"->");
-    //     }
-    //     System.out.println("N");
-    // }
-    
-    
-    public static void printPath(ArrayList<Integer> path) {
-    for (int i = 0; i < path.size(); i++) {
-        System.out.print(path.get(i));
-        if (i < path.size() - 1) {
-            System.out.print("->");
-        }
-    }
-    System.out.println("Null"); // Move to the next line after printing the path
-}
-
-    public static void printRoot2Leaf(Node root, ArrayList<Integer> path) {
-        if(root == null) {
-            return;
-        }
-        path.add(root.data);
-        if(root.left == null && root.right == null) {
-            printPath(path);
-        }
-        printRoot2Leaf(root.left,path);
-        printRoot2Leaf(root.right,path);
-        path.remove(path.size()-1);
-        
-    }
     
     public static boolean isValidBST(Node root, Node min, Node max) {
         if(root == null) {
@@ -119,6 +67,8 @@ public class Main {
     }
    }
 }
+
+
 
 === Code Output ===
 
