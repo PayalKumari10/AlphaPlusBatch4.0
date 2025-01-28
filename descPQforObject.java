@@ -16,7 +16,7 @@ public class Main {
         }
 }
 public static void main(String args[]) {
-    PriorityQueue<Student> pq = new PriorityQueue<>(Comparator.reverseOrder()); 
+    PriorityQueue<Student> pq = new PriorityQueue<>(Comparator.reverseOrder());  //descending order
     
     pq.add(new Student("A", 4)); //O(logn)
     pq.add(new Student("B", 5));
