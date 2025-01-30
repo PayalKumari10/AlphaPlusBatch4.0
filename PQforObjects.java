@@ -1,5 +1,6 @@
 import java.util.PriorityQueue;
 
+
 public class Main {
     static class Student implements Comparable<Student> {
         String name;
@@ -14,6 +15,7 @@ public class Main {
             return this.rank - s2.rank;
         }
 }
+    
 public static void main(String args[]) {
     PriorityQueue<Student> pq = new PriorityQueue<>(); 
     
