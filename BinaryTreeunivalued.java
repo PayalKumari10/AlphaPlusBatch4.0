@@ -6,6 +6,7 @@ class Main {
         Node left;
         Node right;
 
+        
         // Constructor to initialize Node with data
         Node(int data) {
             this.data = data;
