@@ -4,6 +4,7 @@ class Complex {
     int real;
     int imag;
 
+    
     // Constructor
     public Complex(int r, int i) {
         this.real = r;
