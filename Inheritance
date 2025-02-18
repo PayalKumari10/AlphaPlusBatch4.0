@@ -9,6 +9,7 @@ class Main {
         shark.color = "blue";
         System.out.println(shark.color);
 
+
         Bird peacock = new Bird();
         peacock.eat();
         peacock.fly();
@@ -16,6 +17,7 @@ class Main {
         peacock.leg = 2;
         System.out.println(peacock.color);
         System.out.println(peacock.leg);
+
 
         Mammal dog = new Mammal();
         dog.eat();
