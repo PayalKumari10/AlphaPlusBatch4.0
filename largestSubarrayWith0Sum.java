@@ -9,7 +9,7 @@ public class Main {
         int sum = 0;
         int len = 0;
         
-        for(int j=0; j<arr.length; j++) {
+        for(int j=0; j<arr.length; j++) {  //O(n)
             sum += arr[j];
             if(map.containsKey(sum)) {
                 len = Math.max(len, j-map.get(sum));
