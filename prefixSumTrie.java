@@ -28,7 +28,7 @@ public class Main {
         curr.eow = true;
     }
 
-    public static void findPrefix(Node node, String ans) {
+    public static void findPrefix(Node node, String ans) { //O(L) level in trie - longest words
         if (node == null) { 
             return;
         }
