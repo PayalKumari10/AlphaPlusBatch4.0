@@ -6,7 +6,7 @@ public class Main {
         int dest;
         int wt;
 
-        public Edge(int s, int d, int w) {  // Fixed 'in' to 'int'
+        public Edge(int s, int d, int w) {  
             this.src = s;
             this.dest = d;
             this.wt = w;
@@ -58,7 +58,7 @@ public class Main {
         }
     }
 
-    public static void kruskalsMST(ArrayList<Edge> edges, int V) { // Fixed method name
+    public static void kruskalsMST(ArrayList<Edge> edges, int V) {
         init();
         Collections.sort(edges); // O(ElogE)
         int mstCost = 0;
@@ -83,7 +83,7 @@ public class Main {
         int V = 4;
         ArrayList<Edge> edges = new ArrayList<>();
         createGraph(edges);
-        kruskalsMST(edges, V); // Fixed function call
+        kruskalsMST(edges, V); 
     }
 }
 
