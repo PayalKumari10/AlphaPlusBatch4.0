@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 public class Main {
     
 public static int countWays(int n, int ways[]) {
