@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main {
-    public static int rodCutting(int length[], int price[], int totRod) {
+    public static int rodCutting(int length[], int price[], int totRod) {  //O(n*totRod)
         int n = price.length;
         int dp[][] = new int[n+1][totRod+1];
         
