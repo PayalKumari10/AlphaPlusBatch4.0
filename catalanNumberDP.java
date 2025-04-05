@@ -39,7 +39,7 @@ public class Classroom {
 
 === Code Output ===
 
-9694845
+14
 14
 
 === Code Execution Successful ===
