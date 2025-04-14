@@ -1,10 +1,12 @@
 import java.util.*;
 
+
 public class Classroom {
     public static int mcm(int arr[], int i, int j) {
         if(i == j) {
             return 0;   //single matrix case
         }
+        
         int ans = Integer.MAX_VALUE;
         for(int k=i; k<=j-1; k++) {
             int cost1 = mcm(arr, i, k); //Ai..Ak => arr[i-1]*arr[k]
