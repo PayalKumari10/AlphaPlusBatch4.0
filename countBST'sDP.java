@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Classroom {
     //O(n^2)
+    
     public static int countBST(int n) {
         int dp[] = new int[n+1];
         dp[0] = 1;
