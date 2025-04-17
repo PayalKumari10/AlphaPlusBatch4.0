@@ -46,7 +46,7 @@ public class Classroom {
         
         
         // bottom-up
-        for (int len = 2; len <= n - 1; len++) { // FIXED
+        for (int len = 2; len <= n - 1; len++) { 
           for (int i = 1; i <= n - len; i++) {
             int j = i + len - 1;
             dp[i][j] = Integer.MAX_VALUE;
