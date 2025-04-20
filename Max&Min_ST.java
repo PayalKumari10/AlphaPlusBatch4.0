@@ -52,8 +52,12 @@ public static void updateUtil(int i, int si, int sj, int idx, int newVal) { //O(
     if(idx < si || idx > sj) {
         return;
     }
-    tree[i] = Math.max(tree[i], newVal);
+    if(si == sj) {
+        tree[i] = newVal;
+    }
     if(si != sj) {
+            tree[i] = Math.max(tree[i], newVal);
+
         int mid = (si+sj)/2;
         updateUtil(2*i+1, si, mid, idx, newVal); //left
         updateUtil(2*i+2, mid+1, sj, idx, newVal); //left
